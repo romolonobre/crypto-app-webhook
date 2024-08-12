@@ -8,5 +8,5 @@ CryptoApp is a simple Flutter application designed to provide real-time cryptocu
 - Improved error handling
 
 # Purpose
-This project is intended as a learning tool for developers interested in understanding how to consume webhooks and integrate real-time data streams into a Flutter application. It also serves as an example of how to handle WebSocket connections and manage state in a Flutter app.
+This project is intended as a learning tool for developers interested in understanding how to consume webhooks and integrate real-time data streams into a Flutter application. It also serves as an example of how to manage state in a Flutter app using Bloc
 
