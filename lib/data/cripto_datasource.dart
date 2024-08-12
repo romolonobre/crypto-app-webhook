@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:crypto_app/crypto.dart';
+import 'package:crypto_app/data/crypto.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 class CriptoDatasource {

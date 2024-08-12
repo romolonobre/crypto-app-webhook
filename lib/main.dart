@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'crypto_view.dart';
+import 'presenter/crypto_view.dart';
 
 void main() {
   runApp(const MyApp());

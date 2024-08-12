@@ -1,6 +1,6 @@
-import 'package:crypto_app/crypto_event.dart';
-import 'package:crypto_app/crypto_service.dart';
-import 'package:crypto_app/crypto_state.dart';
+import 'package:crypto_app/data/crypto_service.dart';
+import 'package:crypto_app/presenter/bloc/crypto_event.dart';
+import 'package:crypto_app/presenter/bloc/crypto_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CryptoBloc extends Bloc<CryptoEvent, CryptoState> {

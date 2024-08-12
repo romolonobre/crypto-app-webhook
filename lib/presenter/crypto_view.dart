@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cripto_bloc.dart';
-import 'crypto_event.dart';
-import 'crypto_state.dart';
+import 'bloc/cripto_bloc.dart';
+import 'bloc/crypto_event.dart';
+import 'bloc/crypto_state.dart';
 
 class CryptoView extends StatefulWidget {
   const CryptoView({super.key});
