@@ -36,9 +36,9 @@ class _CryptoViewState extends State<CryptoView> {
       builder: (context, state) {
         return switch (state) {
           CryptoInitialState _ => SizedBox.fromSize(),
-          CryptoLoadingState() => const Center(child: CircularProgressIndicator()),
-          CryptoLoadedState() => Center(child: Text(state.crypto.price ?? 'No info')),
-          CryptoErrorState() => Center(child: Text(state.message)),
+          CryptoLoadingState _ => const Center(child: CircularProgressIndicator()),
+          CryptoLoadedState state => Center(child: Text(state.crypto.price ?? 'No info')),
+          CryptoErrorState state => Center(child: Text(state.message)),
         };
       },
     ));
