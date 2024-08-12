@@ -3,16 +3,16 @@ import '../../data/crypto.dart';
 
 abstract class CryptoState {}
 
-class CryptoInitial extends CryptoState {}
+class CryptoInitialState extends CryptoState {}
 
-class CryptoLoading extends CryptoState {}
+class CryptoLoadingState extends CryptoState {}
 
-class CryptoLoaded extends CryptoState {
+class CryptoLoadedState extends CryptoState {
   final Crypto crypto;
-  CryptoLoaded(this.crypto);
+  CryptoLoadedState(this.crypto);
 }
 
-class CryptoError extends CryptoState {
+class CryptoErrorState extends CryptoState {
   final String message;
-  CryptoError(this.message);
+  CryptoErrorState(this.message);
 }

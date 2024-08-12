@@ -1,3 +1,3 @@
 abstract class CryptoEvent {}
 
-class CryptoLoad extends CryptoEvent {}
+class CryptoLoadEvent extends CryptoEvent {}
