@@ -14,7 +14,7 @@ class CriptoDatasource {
 
   void _subscribeToChannel(List<String> productIds) {
     final subscribeMessage = {
-      "type": "subscrib",
+      "type": "subscribe",
       "channels": [
         {
           "name": "ticker",
