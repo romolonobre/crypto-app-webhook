@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 // crypto_service.dart
-import 'package:crypto_app/data/cripto_datasource.dart';
+import 'package:crypto_app/data/crypto_datasource.dart';
 import 'package:either_dart/either.dart';
 
 import 'crypto.dart';
 
 class CryptoService {
-  final CriptoDatasource _datasource = CriptoDatasource();
+  final CryptoDatasource _datasource = CryptoDatasource();
   CryptoService();
 
   Stream<Either<String, Crypto>> getAll() {

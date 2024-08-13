@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:crypto_app/data/crypto.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
-class CriptoDatasource {
+class CryptoDatasource {
   final String _url = 'wss://ws-feed.exchange.coinbase.com';
   late WebSocketChannel _channel;
 
