@@ -35,9 +35,9 @@ class CryptoDatasource {
       connect();
       return _channel.stream.map<Crypto>((rowData) {
         final data = jsonDecode(rowData);
-        final ticker = Crypto.fromMap(data);
+        final crypto = Crypto.fromMap(data);
 
-        return ticker;
+        return crypto;
       });
     } catch (e) {
       throw (Exception(e.toString()));
