@@ -7,7 +7,7 @@ class CryptoDatasource {
   final String _url = 'wss://ws-feed.exchange.coinbase.com';
   late WebSocketChannel _channel;
 
-  void connect() {
+  void _connect() {
     _channel = WebSocketChannel.connect(Uri.parse(_url));
     _subscribeToChannel(['BTC-USD', 'ETH-USD', 'LTC-USD']);
   }
@@ -32,7 +32,7 @@ class CryptoDatasource {
 
   Stream<Crypto> streamCrypto() {
     try {
-      connect();
+      _connect();
       return _channel.stream.map<Crypto>((rowData) {
         final data = jsonDecode(rowData);
         final crypto = Crypto.fromMap(data);
